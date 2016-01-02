@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="60dp">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:text="India"
+        android:id="@+id/tx_country_name"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:text="NewDelhi"
+        android:id="@+id/tx_capital_name"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tx_country_name" />
+
+</RelativeLayout>

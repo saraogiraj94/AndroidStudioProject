@@ -1,0 +1,18 @@
+<resources>
+  <string name="app_name">Around the world</string>
+
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+  <string-array name="places">
+    <item>"Bora Bora"</item>
+    <item>"Canada"</item>
+    <item>"Dubai"</item>
+    <item>"Hong Kong"</item>
+    <item>"Iceland"</item>
+    <item>"India"</item>
+    <item>"Kenya"</item>
+    <item>"London"</item>
+    <item>"Switzerland"</item>
+    <item>"Sydney"</item>
+  </string-array>
+</resources>
