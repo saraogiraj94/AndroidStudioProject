@@ -25,7 +25,7 @@ public class Singleton {
         imageLoader = new ImageLoader(requestQueue,
                 new ImageLoader.ImageCache() {
                     private final LruCache<String, Bitmap>
-                            cache = new LruCache<String, Bitmap>(20);
+                            cache = new LruCache<>((int)(Runtime.getRuntime().maxMemory()/1024)/8);
 
                     @Override
                     public Bitmap getBitmap(String url) {
@@ -53,6 +53,9 @@ public class Singleton {
             requestQueue = new RequestQueue(cache, network);
         }
         return requestQueue;
+    }
+    public ImageLoader getImageLoader() {
+        return imageLoader;
     }
 }
 
